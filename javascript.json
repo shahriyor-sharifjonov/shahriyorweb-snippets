@@ -1,0 +1,88 @@
+{
+	"setMenuLinks": {
+		"prefix": "setMenuLinks",
+		"body": [
+			"function setMenuLinks() {\n\tconst links = document.querySelectorAll('.${1:header__link}');\n\tconst location = window.location.pathname;\n\tlinks.forEach(link => {\n\t\tconst linkHref = '/' + link.getAttribute('href');\n\t\tif(linkHref == location){\n\t\t\tlink.classList.add('active');\n\t\t\tlink.setAttribute('href', '#!');\n\t\t}else{\n\t\t\tlink.classList.remove('active');\n\t\t\tconst dataHref = link.getAttribute('data-href');\n\t\t\tlink.setAttribute('href', dataHref);\n\t\t}\n\t});\n}",
+			"",
+			"window.addEventListener('DOMContentLoaded', () => {\n\tsetTimeout(() => {\n\t\tsetMenuLinks();\n\t}, 200);\n})"
+		],
+		"description": "Menudagi linklarga active class qo'shadi"
+	},
+	"delay": {
+		"prefix": "delay",
+		"body": [
+			"function delay(n) {",
+			"\tn = n || 2000;",
+			"\treturn new Promise(done => {",
+			"\t\tsetTimeout(() => {",
+			"\t\t\tdone();",
+			"\t\t}, n);",
+			"\t});",
+			"}"
+		]
+	},
+	"barba": {
+		"prefix": "barba",
+		"body": [
+			"barba.init({",
+			"\tsync: true,",
+			"\ttransitions: [{",
+			"\t\tasync leave(data) {",
+			"\t\t\tconst done = this.async();",
+			"\t\t\tpageTransition();",
+			"\t\t\tsetMenuLinks();",
+			"\t\t\tawait delay(1500);",
+			"\t\t\tdone();",
+			"\t\t},",
+			"\t\tasync enter(data) {",
+			"\t\t\tcontentAnimation();",
+			"\t\t},",
+			"\t\tasync once(data) {",
+			"\t\t\tcontentAnimation();",
+			"\t\t},",
+			"\t}]",
+			"})"
+		]
+	},
+	"gsaptextanimation": {
+		"prefix": "gsaptextanimation",
+		"body": [
+			"tl.from(\".text-reveal span\", 1, {y: 120, ease: \"power1.out\", delay: 1, skewY: 17, stagger: {amount: 0}}, \"-=1.1\")"
+		]
+	},
+	"pollyfillforeach": {
+		"prefix": "pollyfillforeach",
+		"body": [
+			"if (window.NodeList && !NodeList.prototype.forEach) {",
+			"\tNodeList.prototype.forEach = function (callback, thisArg) {",
+			"\t\tthisArg = thisArg || window;",
+			"\t\tfor (var i = 0; i < this.length; i++) {",
+			"\t\t\tcallback.call(thisArg, this[i], i, this);",
+			"\t\t}",
+			"\t};",	
+			"}"		
+		]
+	},
+	"accordion": {
+		"prefix": "accordion",
+		"body": [
+			"$(document).ready(function() {",
+			"\t$(\".accordion > .accordion__button\").on(\"click\", function() {",
+			"\t\tif ($(this).hasClass(\"active\")) {",
+			"\t\t\t$(this).removeClass(\"active\");",
+			"\t\t\t$(this)",
+			"\t\t\t\t.siblings(\".accordion__content\")",
+			"\t\t\t\t.slideUp(200);",
+			"\t\t} else {",
+			"\t\t\t$(\".accordion > .accordion__button\").removeClass(\"active\");",
+			"\t\t\t$(this).addClass(\"active\");",
+			"\t\t\t$(\".accordion__content\").slideUp(200);",
+			"\t\t\t$(this)",
+			"\t\t\t\t.siblings(\".accordion__content\")",
+			"\t\t\t\t.slideDown(200);",
+			"\t\t}",
+			"\t});",
+			"});"
+		]
+	}
+}

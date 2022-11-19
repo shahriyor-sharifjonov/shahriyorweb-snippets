@@ -1,0 +1,269 @@
+{
+	"border-radius": {
+		"prefix": "brad",
+		"body": [
+			"border-radius: ${1:8px};"
+		],
+		"description": "Border radius"
+	},
+	"mediaul": {
+		"prefix": "mediaul",
+		"body": [
+			"@include media(1900){\n\t$0\n}"
+		],
+		"description": "Media"
+	},
+	"mediaxxl": {
+		"prefix": "mediaxxl",
+		"body": [
+			"@include media(1400){\n\t$0\n}"
+		],
+		"description": "Media"
+	},
+	"mediaxl": {
+		"prefix": "mediaxl",
+		"body": [
+			"@include media(1200){\n\t$0\n}"
+		],
+		"description": "Media"
+	},
+	"medialg": {
+		"prefix": "medialg",
+		"body": [
+			"@include media(992){\n\t$0\n}"
+		],
+		"description": "Media"
+	},
+	"mediamd": {
+		"prefix": "mediamd",
+		"body": [
+			"@include media(768){\n\t$0\n}"
+		],
+		"description": "Media"
+	},
+	"mediamd2": {
+		"prefix": "mediamd2",
+		"body": [
+			"@include media(767){\n\t$0\n}"
+		],
+		"description": "Media"
+	},
+	"mediasm": {
+		"prefix": "mediasm",
+		"body": [
+			"@include media(576){\n\t$0\n}"
+		],
+		"description": "Media"
+	},
+	"positionRelative": {
+		"prefix": "pra",
+		"body": [
+			"position: relative;"
+		],
+		"description": "position relative"
+	},
+	"positionAbsolute": {
+		"prefix": "psa",
+		"body": [
+			"position: absolute;"
+		],
+		"description": "position absolute"
+	},
+	"clear": {
+		"prefix": "clear",
+		"body": [
+			"margin: 0; \npadding: 0;\nbox-sizing: border-box;"
+		],
+		"description": "clear"
+	},
+	"before": {
+		"prefix": "before",
+		"body": [
+			"position: relative; \n&::before{\n\tcontent: '';\n\tposition: absolute;\n\ttop: 0;\n\tleft: 0;  \n\twidth: ${1:15px};\n\theight: ${1:15px};\n\tbackground: #000;\n}"
+		],
+		"description": "before"
+	},
+	"after": {
+		"prefix": "after",
+		"body": [
+			"position: relative; \n&::before{\n\tcontent: '';\n\tposition: absolute;\n\ttop: 0;\n\tleft: 0;  \n\twidth: ${1:15px};\n\theight: ${1:15px};\n\tbackground: #000;\n}"
+		],
+		"description": "after"
+	},
+	"centerAbsoluteElement": {
+		"prefix": "cea",
+		"body": [
+			"top: 50%;\nleft: 50%;\ntransform: translate(-50%, -50%);"
+		],
+		"description": "center an absolute element"
+	},
+	"centerFlexElement": {
+		"prefix": "cef",
+		"body": [
+			"align-items: center;\njustify-content: center;" 
+		],
+		"description": "center an absolute element"
+	},
+	"textAlignLeft": {
+		"prefix": "tal",
+		"body": [
+			"text-align: left;" 
+		],
+		"description": "text align left"
+	},
+	"notLastChild": {
+		"prefix": "notlast",
+		"body": [
+			"&:not(:last-of-type){\n    $0\n}"
+		],
+		"description": "not(:last-of-type){}"
+	},
+	"shadow": {
+		"prefix": "shadow",
+		"body": [
+			"box-shadow: 0 0 10px #00000020;"
+		],
+		"description": "box-shadow"
+	},
+	"hover": {
+		"prefix": "hv",
+		"body": [
+			"&:hover{\n\t$0\n}"
+		],
+		"description": "hover"
+	},
+	"transition": {
+		"prefix": "tra",
+		"body": [
+			"transition: 300ms ease-out;"
+		],
+		"description": "transition"
+	},
+	"hide": {
+		"prefix": "hide",
+		"body": [
+			"opacity: 0;",
+			"visibility: hidden;"
+		],
+		"description": "hide"
+	},
+	"show": {
+		"prefix": "show",
+		"body": [
+			"opacity: 1;",
+			"visibility: visible;"
+		],
+		"description": "show"
+	},
+	"transform translate": {
+		"prefix": "tr",
+		"body": [
+			"transform: translate($0);"
+		],
+		"description": "transform translate"
+	},
+	"transform translateY": {
+		"prefix": "try",
+		"body": [
+			"transform: translateY($0);"
+		],
+		"description": "transform translateY"
+	},
+	"transform translatex": {
+		"prefix": "trx",
+		"body": [
+			"transform: translateX($0);"
+		],
+		"description": "transform translatex"
+	},
+	"list": {
+		"prefix": "list",
+		"body": [
+			"list-style-type: none;"
+		],
+		"description": "marginX"
+	},
+	"positionFixed": {
+		"prefix": "pf",
+		"body": [
+			"position: fixed;"
+		],
+		"description": "marginX"
+	},
+	"flexDirectionColumn": {
+		"prefix": "fd",
+		"body": [
+			"flex-direction: column;"
+		],
+		"description": "flex direction column"
+	},
+	"fls": {
+		"prefix": "fls",
+		"body": [
+			"cubic-bezier(0.68,-0.55,0.265,1.55)"
+		],
+		"description": "fls"
+	},
+	"el2": {
+		"prefix": "el2",
+		"body": [
+			"flex: 0 1 50%;"
+		],
+		"description": "el2"
+	},
+	"el3": {
+		"prefix": "el3",
+		"body": [
+			"flex: 0 1 33.333%;"
+		],
+		"description": "el3"
+	},
+	"pg": {
+		"prefix": "pg",
+		"body": [
+			"padding: $0;"
+		],
+		"description": "padding"
+	},
+	"fww": {
+		"prefix": "fww",
+		"body": [
+			"flex-wrap: wrap;"
+		],
+		"description": "flex wrap wrap"
+	},
+	"flb": {
+		"prefix": "flb",
+		"body": [
+			"flex: 1 1 auto;"
+		],
+		"description": "flex: 1 1 auto;"
+	},
+	"ellipsis": {
+		"prefix": "ellipsis",
+		"body": [
+			"overflow: hidden;",
+			"width:100px;",
+			"display: -webkit-box;",
+			"-webkit-line-clamp: 3;",
+			"-webkit-box-orient: vertical;"
+		],
+		"description": "text overflow dots"
+	},
+	"visually hidden": {
+		"prefix": "vsh",
+		"body": [
+			".visually-hidden{",
+			"\tposition: absolute !important;",
+			"\tclip: rect(1px 1px 1px 1px);",
+			"\tclip: rect(1px, 1px, 1px, 1px);",
+			"\tpadding: 0 !important;",
+			"\tborder: 0 !important;",
+			"\theight: 1px !important;",
+			"\twidth: 1px !important;",
+			"\toverflow: hidden;",
+			"}"
+		],
+		"description": "text overflow dots"
+	}
+}
