@@ -1,0 +1,75 @@
+{
+  "editor.matchBrackets": false,
+  "editor.formatOnSave": false,
+  "terminal.integrated.profiles.windows": {
+    "git": {
+      "path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+    }
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "files.autoSave": "afterDelay",
+  "terminal.integrated.tabs.enabled": true,
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb",
+    "*.sqlite3": "default"
+  },
+  "workbench.editor.untitled.hint": "hidden",
+  "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
+  "php-cs-fixer.lastDownload": 1667568629923,
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "workbench.colorTheme": "One Dark Pro",
+  "terminal.integrated.fontFamily": "Consolas, 'Courier New', monospace",
+  "editor.fontSize": 15,
+  "editor.fontLigatures": true,
+  "editor.fontWeight": 600,
+  "editor.cursorSmoothCaretAnimation": true,
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[php]": {
+    "editor.defaultFormatter": "kokororin.vscode-phpfmt"
+  },
+  "editor.maxTokenizationLineLength": 50000,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "liveServer.settings.donotShowInfoMsg": true,
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  "editor.fontFamily": "MonoLisa",
+  "gitlens.views.branches.files.layout": "list",
+  "gitlens.views.repositories.avatars": false,
+  "path-autocomplete.pathMappings": {
+    "@img": "${folder}/img",
+    "@scss": "${folder}/scss",
+    "@js": "${folder}/js"
+  },
+  "workbench.startupEditor": "none",
+  "google-translate.secondLanguage": "ru",
+  "google-translate.firstLanguage": "en",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "scss.hover.documentation": false,
+  "less.hover.documentation": false,
+  "css.hover.documentation": false,
+  "html.hover.documentation": false,
+  "eslint.codeAction.showDocumentation": {
+    "enable": false
+  },
+  "html.hover.references": false,
+  "css.hover.references": false,
+  "less.hover.references": false,
+  "scss.hover.references": false,
+  "tabnine.experimentalAutoImports": true,
+  "explorer.confirmDelete": false,
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
