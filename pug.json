@@ -1,0 +1,40 @@
+{
+	"button": {
+		"prefix": "btn",
+		"body": [
+			"button(type='button')" 
+		],
+		"description": "button"
+	},
+	"ripple": {
+		"prefix": "ripple",
+		"body": [
+			"anim='ripple'" 
+		],
+		"description": "ripple animation"
+	},
+	"gsapminjs": {
+		"prefix": "gsapminjs",
+		"body": [
+			"script(type=\"text/javascript\" src=\"https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js\")"
+		]
+	},
+	"barbajs": {
+		"prefix": "barbajs",
+		"body": [
+			"script(src=\"https://unpkg.com/@barba/core@2.9.7/dist/barba.umd.js\")"
+		]
+	},
+	"draggable": {
+		"prefix": "drg",
+		"body": [
+			"draggable=\"false\""
+		]
+	},
+	"img": {
+		"prefix": "imgg",
+		"body": [
+			"img(src=\"$0\", alt=\"\" draggable=\"false\")"
+		]
+	}
+}
